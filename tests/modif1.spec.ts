@@ -7,7 +7,8 @@ import { metricMass } from '../src/modif1';
 import { Adapter } from '../src/modif1';
 
 describe('prueba modif1', () =>{
-  let centimetros = new metricLength(1);
+  const constante: number = 1
+  let centimetros: metricLength = new metricLength(constante);
   it('primer test CM a M', () => {
     expect(centimetros.getMetros()).to.be.equal(0.01);
   });
@@ -42,11 +43,16 @@ describe('prueba modif1', () =>{
   it('primer test oz a piedras', () => {
     expect(oz.getPiedras()).to.be.equal(0.00446429);    
   });
-  
+
   let conversion = new Adapter(new metricLength(1))
 
-  it('primer test oz pasar de pulgadas a cm', () => {
+  it('primer test pasar de pulgadas a cm', () => {
     expect(conversion.getData()).to.be.equal(2.54);    
   });
+
+  it('primer test pasar de pulgadas a m', () => {
+    expect(conversion.getData1()).to.be.equal(0.000254);    
+  });
+
 
 });

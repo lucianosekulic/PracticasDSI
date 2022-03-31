@@ -11,21 +11,21 @@ export class imperialLength {
   }
 
   getYardas() {
-    let result: number = 0
-    result = result * 0.0277778;
-    return this.result
+    let resultadoFinal: number = 0
+    resultadoFinal = this.result * 0.0277778;
+    return resultadoFinal
   }
 
   getPies() {
-    let result: number = 0
-    result = result * 0.0833333
-    return this.result
+    let resultadoFinal: number = 0
+    resultadoFinal = this.result * 0.0833333
+    return resultadoFinal
   }
 
   getMillas() {
-    let result: number = 0
-    result = result * 0.000015782799999999997
-    return this.result
+    let resultadoFinal: number = 0
+    resultadoFinal = this.result * 0.000015782799999999997
+    return resultadoFinal
   }
 }
 
@@ -40,27 +40,27 @@ export class imperialMasa {
   }
 
   getLibras() {
-    let result: number = 0
-    result = result * 0.0625
-    return this.result
+    let resultadoFinal: number = 0
+    resultadoFinal = this.result * 0.0625
+    return resultadoFinal
   }
 
   getPiedras() {
-    let result: number = 0
-    result = result * 0.00446429
-    return this.result
+    let resultadoFinal: number = 0
+    resultadoFinal = this.result * 0.00446429
+    return resultadoFinal
   }
 
   getCentenas() {
-    let result: number = 0
-    result = result * 0.000558036
-    return this.result
+    let resultadoFinal: number = 0
+    resultadoFinal = this.result * 0.000558036
+    return resultadoFinal
   }
 
   getToneladas() {
-    let result: number = 0
-    result = result * 0.000027901999999999998
-    return this.result
+    let resultadoFinal: number = 0
+    resultadoFinal = this.result * 0.000027901999999999998
+    return resultadoFinal
   }
 }
 
@@ -78,15 +78,15 @@ export class imperialMasa {
   }
 
   getKM() {
-    let result: number = 0
-    result = result * 0.000009999999999999999
-    return this.result
+    let resultadoFinal: number = 0
+    resultadoFinal = this.result * 0.000009999999999999999
+    return resultadoFinal
   }
 
   getMetros() {
-    let result: number = 0
-    result = result * 0.01
-    return this.result
+    let resultadoFinal: number = 0
+    resultadoFinal = this.result * 0.01
+    return resultadoFinal
   }
 
 }
@@ -105,15 +105,15 @@ export class imperialMasa {
   }
 
   getKiogramos() {
-    let result: number = 0
-    result = result * 0.001
-    return this.result
+    let resultadoFinal: number = 0
+    resultadoFinal = this.result * 0.001
+    return resultadoFinal
   }
 
   getToneladas() {
-    let result: number = 0
-    result = result * 0.000001
-    return this.result
+    let resultadoFinal: number = 0
+    resultadoFinal = this.result * 0.000001
+    return resultadoFinal
   }
 
 }
@@ -128,10 +128,10 @@ export class Adapter extends imperialLength {
     const pulgada = this.service.getcm() * 2.54;
     return pulgada
   }
-/** 
+
   getData1(): number {
-    const oz = this.service1.get() * 2.54;
-    return oz
+    const pulgada1 = this.service.getMetros() * 0.0254;
+    return pulgada1
   }
-  */
+
 }
