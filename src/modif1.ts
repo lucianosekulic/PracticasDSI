@@ -64,9 +64,6 @@ export class imperialMasa {
   }
 }
 
-type conversion = {
-
-}
 
 
 /**
