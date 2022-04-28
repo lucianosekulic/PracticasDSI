@@ -4,6 +4,9 @@ import {spawn} from 'child_process';
 
 const filename = process.argv[2];
     
+/**
+ * watchfile para ver si el fichero sumar.txt cambia
+ */
     fs.access(filename, fs.constants.F_OK, (err) => {
         console.log(`${filename} ${err ? 'no existe' : 'existe'}`);
     

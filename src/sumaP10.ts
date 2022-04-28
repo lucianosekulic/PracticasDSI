@@ -1,5 +1,8 @@
 import * as fs from 'fs';
 
+/**
+ * clase sumaP10 donde se encuentran los metodos para la suma de los numeros del fichero sumar.txt
+ */
 export class sumaP10 {
     private constructor(){
     }
